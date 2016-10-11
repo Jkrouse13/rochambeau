@@ -30,7 +30,7 @@ class Game
     elsif player_one_choice == "s" && computer == "paper"
       puts "Player: SCISSORS vs Computer: PAPER ----- PLAYER WINS"
         play_again?
-    elsif player_one_choice == "s" && computer == "ROCK"
+    elsif player_one_choice == "s" && computer == "rock"
       puts "Player: SCISSORS vs Computer: ROCK ----- COMPUTER WINS"
         play_again?
     elsif player_one_choice == "p" && computer == "scissors"
