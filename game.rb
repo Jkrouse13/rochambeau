@@ -9,6 +9,11 @@ class Game
     gets
   end
 
+  def play
+    new_game
+    game_play
+  end
+
   def game_play
     puts "Make your selection!"
 
@@ -39,7 +44,7 @@ class Game
     elsif player_one_choice == "p" && computer == "rock"
       puts "Player: PAPER vs Computer: ROCK ----- PLAYER WINS"
         play_again?
-    elsif player_one_choice == "p" && computer == "scissors"
+    elsif player_one_choice == "p" && computer == "paper"
       puts "Player: PAPER vs Computer: PAPER ----- DRAW"
         play_again?
     else
@@ -48,13 +53,6 @@ class Game
     end
   end
 
-
-  def play
-    new_game
-    game_play
-
-
-  end
 
   def play_again?
     puts "Would you like to play again? (Press y to play again)"
