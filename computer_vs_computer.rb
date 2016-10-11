@@ -10,14 +10,6 @@ class Game
     self.error_tally = 0
   end
 
-
-  def new_game
-    puts "Let's rochambeau!"
-    puts "Use 'r' to choose rock, 'p' to choose paper, and 's' to choose scissors."
-    puts "Ready? (press any key)"
-    gets
-  end
-
   def play
     self.computer1 = %w(rock paper scissors).sample
     self.computer2 = %w(rock paper scissors).sample
